@@ -4,9 +4,18 @@ import { Link } from "gatsby"
 const PostLink = ({ post }) => (
   <ul className="work-list">
     <li>
-      <Link to={post.frontmatter.path} className="post-link">
+      {/* <Link to={post.frontmatter.slug} className="post-link">
         {post.frontmatter.title}
-      </Link>
+      </Link> */}
+      <div>
+        <p>{post.frontmatter.title}</p>
+      </div>
+      <div>
+        <p>{post.frontmatter.link}</p>
+      </div>
+      <div>
+        <p>{post.frontmatter.image}</p>
+      </div>
     </li>
   </ul>
 )

@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
   # name: github
-  # repo: saulofilho/pagina-de-materiais
+  repo: saulofilho/pagina-de-materiais
   branch: master
 media_folder: static/assets
 public_folder: /assets
 collections:
   - name: post
-    label: post
+    label: Post
     folder: data/posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true

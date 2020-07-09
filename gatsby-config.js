@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Santa Contabilidade`,
-    description: `Página ed Materiais`,
-    siteUrl: `https://saulofilho.com`,
+    description: `Página de Materiais`,
+    siteUrl: `https://pagina-de-materiais.netlify.app/`,
     home: {
       title: `Santa Contabilidade`,
       description: `Página de Materiais.`,
