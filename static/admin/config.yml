@@ -1,34 +1,30 @@
 backend:
-  name: github
-  repo: saulofilho/new-portfolio
+  name: git-gateway
+  # name: github
+  # repo: saulofilho/pagina-de-materiais
+  branch: master
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: blog
-    label: Blog
-    folder: _data/blog
+  - name: post
+    label: post
+    folder: data/posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
       - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: BlogPost,
-        }
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - label: Featured Image
-        name: thumbnail
+        label: Template,
+        name: template,
+        widget: hidden,
+        default: BlogPost,
+      }
+      - { name: date, label: Date, widget: datetime, required: false }
+      - { name: title, label: Title, widget: markdown, required: false }
+      - { name: link, label: Link, widget: string, required: false }
+      - label: Image
+        name: image
         widget: image
-        hint: "Image size 1280x800 works best :)"
         required: false
         media_library:
           config:
             multiple: false
-      - { name: body, label: Body, widget: markdown }
-      - label: Meta Description
-        name: metaDescription
-        widget: text
-        required: false
