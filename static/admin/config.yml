@@ -8,18 +8,13 @@ public_folder: /assets
 collections:
   - name: post
     label: Post
-    folder: data/posts
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    folder: data
+    slug: '{{slug}}'
     create: true
     fields:
-      - {
-        label: Template,
-        name: template,
-        widget: hidden,
-        default: BlogPost,
-      }
       - { name: date, label: Date, widget: datetime, required: false }
-      - { name: title, label: Title, widget: markdown, required: false }
+      - { name: title, label: Title, widget: string, required: false }
+      - { name: body, label: Title, widget: markdown, required: false }
       - { name: link, label: Link, widget: string, required: false }
       - label: Image
         name: image

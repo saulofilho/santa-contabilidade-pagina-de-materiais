@@ -1,8 +1,8 @@
 import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
-import Layout from "../components/layout"
-import PostLink from "../components/post-link"
+import Layout from "../components/Layout"
+import Materiais from "../components/Materiais"
 
 const IndexPage = ({
   data: {
@@ -13,22 +13,25 @@ const IndexPage = ({
 
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => <Materiais key={edge.node.id} post={edge.node} html={edge.node.html} />)
+
+  const Lancamentos = edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <Materiais key={edge.node.id} post={edge.node} html={edge.node.html} />)
 
   return (
     <Layout>
-      <div className="site-wrapper">
         <Helmet>
           <title>{site.siteMetadata.title}</title>
           <meta name="description" content={site.siteMetadata.description} />
         </Helmet>
-        <div className="mad-man">
-            <h1>teste</h1>
-            <div className="list">
-              {Posts}
-            </div>
-          </div>
-      </div>
+        <div className="ultimos-lancamentos">
+          {/* {console.log('posts', edges)} */}
+          {Posts}
+        </div>
+        <div className="materiais">
+          {Posts}
+        </div>
     </Layout>
   )
 }
@@ -46,8 +49,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          html
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD.MM.YYYY")
             title
             link
             image
