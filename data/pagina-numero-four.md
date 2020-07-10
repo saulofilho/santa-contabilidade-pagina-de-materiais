@@ -6,4 +6,4 @@ image: /assets/ativo-8.png
 tags:
   - Materiais
 ---
-**Ebook:** 1 estratégias para SaaS que você precisa conhecer
+**Ebook:** 2 estratégias para SaaS que você precisa conhece

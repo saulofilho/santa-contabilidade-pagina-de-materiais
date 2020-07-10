@@ -1,0 +1,21 @@
+footer {
+  height: 560px;
+  width: 100%;
+  background: #06606B;
+}
+.infos-footer {
+  height: 100%;
+  width: 100%;
+}
+.logo-footer {
+  height: 83px;
+  width: 100%;
+  background: #06585E;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer img {
+  max-width: 100%;
+}

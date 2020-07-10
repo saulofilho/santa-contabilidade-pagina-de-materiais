@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.header-right {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header img {
+  max-width: 100%;
+  height: auto;
+}
+header button.btn-materiais {
+  width: 267px;
+  height: 52px;
+  background: #fff;
+  outline: unset;
+  border: unset;
+  border-radius: 2px;
+}
+header button.btn-materiais a {
+  color: #06606B;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+header button.btn-fale {
+  width: 267px;
+  height: 52px;
+  background: #06606B;
+  outline: unset;
+  border: unset;
+  border-radius: 2px;
+}
+header button.btn-fale a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+header button:hover {
+  opacity: 0.9;
+}
+
+/* desktop */
+
+@media (max-width: 720px) {
+  header {
+    flex-flow: column;
+  }
+  .header-right {
+    flex-flow: column;
+  }
+}

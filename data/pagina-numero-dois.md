@@ -1,9 +1,9 @@
 ---
 date: 2020-07-10T14:00:53.468Z
-title: pagina numero um
+title: pagina numero dois
 link: http://localhost:8000/
 image: /assets/ativo-8.png
 tags:
   - Materiais
 ---
-**Ebook:** 1 estratégias para SaaS que você precisa conhecer
+**Ebook:** 2 estratégias para SaaS que você precisa conhece

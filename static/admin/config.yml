@@ -23,3 +23,9 @@ collections:
         media_library:
           config:
             multiple: false
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["Destaque", "Materiais" ]
+        default: ["Materiais"]
