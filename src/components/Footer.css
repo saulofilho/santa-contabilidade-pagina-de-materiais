@@ -1,11 +1,29 @@
 footer {
-  height: 560px;
+  height: auto;
   width: 100%;
   background: #06606B;
+  color: #fff;
+}
+footer h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+footer p {
+  font-size: 17px;
+  line-height: 26px;
 }
 .infos-footer {
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.infos-footer > div {
+  padding: 0 30px;
 }
 .logo-footer {
   height: 83px;
@@ -18,4 +36,44 @@ footer {
 }
 .logo-footer img {
   max-width: 100%;
+}
+.para-empresas p a {
+  color: #fff;
+}
+.para-empresas p a:hover {
+  opacity: 0.6;
+}
+.btns-sociais-wrapper {
+  padding-top: 40px;
+}
+.btns-sociais-wrapper > button{
+  padding-right: 20px;
+}
+.btns-sociais-wrapper button {
+  border: unset;
+}
+.btns-sociais-wrapper button:hover {
+  border: unset;
+  opacity: 0.6;
+}
+
+
+/* desktop */
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  .infos-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .infos-footer > div {
+    padding: 0 30px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .infos-footer {
+    grid-template-columns: 1fr;
+  }
 }

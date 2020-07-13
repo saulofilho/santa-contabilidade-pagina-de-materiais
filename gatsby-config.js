@@ -25,7 +25,7 @@ module.exports = {
         background_color: `rgb(127, 246, 27`,
         theme_color: `#06606B`,
         display: `minimal-ui`,
-        icon: `static/assets/logo-branco.png`,
+        icon: `static/assets/logo-vertical.png`,
       }
     },
     'gatsby-plugin-offline',

@@ -1,21 +1,52 @@
 .hero {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background: #fff;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 .text-hero {
   width: 100%;
   height: auto;
+  padding-right: 50px;
+}
+.text-hero h1 {
+  font-size: 52px;
+  line-height: 62px;
+  color: #06606B;
+  font-weight: 400;
+}
+.text-hero p {
+  font-size: 19px;
+  line-height: 30px;
+  color: #06606B;
+  font-weight: 400;
+  padding-top: 40px;
 }
 .img-hero {
   width: 100%;
   height: auto;
+  padding-left: 50px;
 }
 .img-hero img {
   width: 100%;
   height: auto;
+}
+
+/* desktop */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-flow: column;
+  }
+  .text-hero {
+    padding-right: unset;
+  }
+  .img-hero {
+    padding-left: unset;
+    padding-top: 40px;
+  }
 }

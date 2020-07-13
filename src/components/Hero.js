@@ -4,7 +4,7 @@ import ImgHero from '../../static/assets/hero-img.png'
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero container">
       <div className="text-hero">
         <h1>
           Materiais Educativos

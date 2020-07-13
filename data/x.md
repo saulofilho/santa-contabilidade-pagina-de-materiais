@@ -5,6 +5,5 @@ link: http://localhost:8000/
 image: /assets/torus-8-.jpg
 tags:
   - Materiais
-  - Destaque
 ---
 x

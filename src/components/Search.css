@@ -1,5 +1,8 @@
 .search {
   width: 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .search .react-search-field {
   border: unset !important;
@@ -7,49 +10,52 @@
   height: unset !important;
   display: flex !important;
   flex-flow: row !important;
+  width: 80%;
 }
 .search .react-search-field input[type='text'] {
   right: 0 !important;
   border: 0 !important;
   padding: 16px 15px !important;
   background: #FFFFFF !important;
-  border: 1px solid #989898 !important;
-  margin: 24px auto 8px 24px !important;
+  border: 1px solid #A09F9F !important;
+  margin: 48px auto 0px !important;
   width: 232px !important;
-  height: 48px !important;
+  height: 58px !important;
+  border-radius: 4px 0 0 4px;
 }
 .search .react-search-field input[type='text']:focus {
-  border: 2px solid #000000 !important;
+  border: 2px solid #60B38D !important;
 }
 .search .react-search-field input[type='text']::placeholder {
   font-family: var(--font-secondary) !important;
   font-style: normal !important;
   font-weight: normal !important;
-  font-size: 12px !important;
-  color: #989898 !important;
+  font-size: 22px !important;
+  color: #A09F9F !important;
+  text-align: center;
 }
 .search .react-search-field button {
-  width: 92px !important;
-  height: 48px !important;
-  margin: auto 24px !important;
-  font-family: var(--font-secondary) !important;
+  width: 160px !important;
+  height: 58px !important;
+  margin: 48px auto 0px !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
   color: #fff !important;
-  background: #000 !important;
+  background: #60B38D !important;
   border: none !important;
   cursor: pointer !important;
   text-transform: uppercase !important;
   padding: 0 !important;
+  border-radius: 0 4px 4px 0;
 }
 .search .react-search-field button::after {
-  content: "SEARCH";
-  font-family: var(--font-secondary) !important;
+  content: "BUSCAR";
+  font-family: 'Open Sans', sans-serif !important;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
@@ -64,17 +70,24 @@
 }
 .search-text-wrapper p {
   font-size: 33px;
+  line-height: 39px;
   color: #000;
   font-weight: lighter;
+  text-align: center;
+  font-weight: 300;
 }
 
 /* desktop */
 
-@media (min-width: 1024px) {
-  .search .react-search-field input[type='text'] {
-    margin: 24px auto 8px 0 !important;
+@media (max-width: 768px) {
+  .search .react-search-field {
+    width: 100%;
   }
-  .search .react-search-field button{
-    margin: 0 !important;
+  .search .react-search-field input[type='text']::placeholder {
+    font-size: 14px !important;
+  }
+  .search .react-search-field button {
+    font-size: 8px !important;
+    width: 80px !important;
   }
 }

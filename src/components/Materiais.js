@@ -1,14 +1,22 @@
 import React from "react"
 import './Materiais.css'
 
-const Materiais = ({ post, html }) => (
+const Materiais = ({ post }) => (
   <div className="material-wrapper">
-    <a href={post.frontmatter.link} className="">
-      <img src={post.frontmatter.image} alt="teste"/>
-    </a>
+    <div className="material-image">
+      <a href={post.link} className="">
+        <div
+          className="image"
+          style={{
+            backgroundImage: `url(${post.image})`
+          }}
+          alt={post.title}
+        />
+      </a>
+    </div>
     <div
         className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: post.html }}
       />
   </div>
 )
