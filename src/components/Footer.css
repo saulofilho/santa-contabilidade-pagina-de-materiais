@@ -5,13 +5,13 @@ footer {
   color: #fff;
 }
 footer h4 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: bolder;
   padding-bottom: 40px;
 }
 footer p {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 26px;
 }
 .infos-footer {
@@ -22,8 +22,10 @@ footer p {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.infos-footer > div {
-  padding: 0 30px;
+.sobre-nos,
+.para-empresas,
+.entre-em-contato {
+  padding-right: 30px;
 }
 .logo-footer {
   height: 83px;
@@ -67,8 +69,9 @@ footer p {
   .infos-footer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .infos-footer > div {
-    padding: 0 30px;
+  .sobre-nos,
+  .para-empresas,
+  .entre-em-contato {
     padding-bottom: 80px;
   }
 }

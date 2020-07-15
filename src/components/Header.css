@@ -1,4 +1,4 @@
-header {
+.header-wrapper {
   width: 100%;
   height: auto;
   display: flex;
@@ -6,11 +6,22 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header-right {
+.header-wrapper-active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-right-desk {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
+}
+.header-right-desk a:hover {
+  opacity: 0.6;
 }
 .logo-header {
   width: 100%;
@@ -20,15 +31,15 @@ header {
   max-width: 100%;
   height: auto;
 }
-header button.btn-materiais {
-  width: 240px;
+.btn-materiais {
+  width: 150px;
   height: 40px;
   background: #fff;
   outline: unset;
   border: unset;
   border-radius: 4px;
 }
-header button.btn-materiais a {
+.btn-materiais a {
   color: #06606B;
   font-weight: 400;
   font-size: 14px;
@@ -55,90 +66,59 @@ header button:hover {
   display: flex;
   flex-flow: row;
 }
-.search-header {
-  width: 100%;
-  height: auto;
+.button-blank {
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.search-header .react-search-field {
-  border: unset !important;
-  justify-content: unset !important;
-  height: unset !important;
-  display: flex !important;
-  flex-flow: row !important;
-}
-.search-header .react-search-field input[type='text'] {
-  right: 0 !important;
-  border: 0 !important;
-  padding: 16px 15px !important;
-  background: #FFFFFF !important;
-  border: 1px solid #A09F9F !important;
-  margin: 0 !important;
-  width: 100% !important;
-  height: 30px !important;
-  border-radius: 4px;
-}
-.search-header .react-search-field input[type='text']:focus {
-  border: 2px solid #60B38D !important;
-}
-.search-header .react-search-field input[type='text']::placeholder {
-  font-family: var(--font-secondary) !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 11px !important;
-  color: #A09F9F !important;
-  text-align: center;
-}
-.search-header .react-search-field button {
-  width: auto !important;
-  height: auto !important;
-  margin: 0 !important;
-  font-family: 'Open Sans', sans-serif !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  font-size: 24px !important;
-  line-height: 29px !important;
-  color: #fff !important;
-  background: transparent !important;
-  border: none !important;
-  cursor: pointer !important;
-  text-transform: uppercase !important;
-  padding: 0 !important;
-  border-radius: 0 4px 4px 0;
-}
-.search-header .react-search-field button:hover {
+.button-blank:hover {
   opacity: 0.6;
 }
-.search-header .react-search-field button::after {
-  content: url('../../static/assets/lupa.png');
-  width: 20px;
-  height: 20px;
-  padding-left: 10px;
+.menu-button {
+  display: none;
 }
-.search-header .react-search-field button.react-search-field-button svg {
-  display: none !important;
+.header-right-mob {
+  display: none;
 }
 
 /* desktop */
 
 @media (max-width: 800px) {
-  header {
-    flex-flow: column;
-  }
-  .header-right {
-    flex-flow: column;
-  }
   .btns-wrapper {
     display: flex;
     flex-flow: column;
-    padding-top: 50px;
+    padding-top: 20px;
+  }
+  .btn-materiais {
+    width: 100%;
   }
   header button.btn-fale {
     margin-top: 20px;
   }
-  .logo-header {
-    padding-bottom: 20px;
-  }
   .search-header {
     padding-top: 40px;
+  }
+  .menu-button {
+    display: flex;
+  }
+  .menu-button .x {
+    margin-top: 20px;
+  }
+  .header-right-desk {
+    display: none;
+  }
+  .header-right-mob a {
+    padding-top: 20px;
+  }
+  .header-wrapper-active .header-right-mob {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
 }

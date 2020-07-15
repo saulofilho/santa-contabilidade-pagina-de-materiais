@@ -26,9 +26,6 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
-.materiais > div {
-  flex: 1;
-}
 .lancamentos-wrapper {
   background: #F4F4F5;
 }
@@ -37,7 +34,7 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  padding: 66px 0 51px;
+  padding: 0 0 97px;
 }
 .btn-ver-mais button {
   width: 182px;
@@ -52,7 +49,7 @@
   opacity: 0.6;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .ultimos-lancamentos,
   .materiais {
     grid-template-columns: repeat(2, 1fr);

@@ -11,6 +11,7 @@
   display: flex !important;
   flex-flow: row !important;
   width: 80%;
+  margin: 0 auto;
 }
 .search .react-search-field input[type='text'] {
   right: 0 !important;
@@ -88,6 +89,9 @@
   }
   .search .react-search-field button {
     font-size: 8px !important;
-    width: 80px !important;
+    width: 60px !important;
+  }
+  .search-text-wrapper p {
+    font-size: 26px;
   }
 }

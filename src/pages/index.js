@@ -2,8 +2,6 @@ import React, { useState } from "react"
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
-import Header from '../components/Header'
-import Hero from '../components/Hero'
 import Materiais from "../components/Materiais"
 import TypeChecker from 'typeco';
 import loadable from '@loadable/component'
@@ -52,9 +50,7 @@ const IndexPage = ({
           <title>{site.siteMetadata.title}</title>
           <meta name="description" content={site.siteMetadata.description} />
         </Helmet>
-        <Header onSearchClickExample={onSearchClickExample} />
-        <Hero />
-        <section className="search container">
+        <section className="search container" id="search">
           <div className="search-text-wrapper">
             <p>
               Guias completos e gratuitos sobre
@@ -64,7 +60,6 @@ const IndexPage = ({
           </div>
           <SearchField
             placeholder="O que você quer aprender hoje?"
-            classNames="container"
             onSearchClick={onSearchClickExample}
           />
         </section>

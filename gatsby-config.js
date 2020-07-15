@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Santa Contabilidade`,
+    title: `Santa Contabilidade | Página de Materiais.`,
     description: `Página de Materiais`,
     siteUrl: `https://pagina-de-materiais.netlify.app/`,
     home: {
