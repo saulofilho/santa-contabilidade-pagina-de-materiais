@@ -1,8 +1,8 @@
 ---
 date: 2020-07-10T17:38:03.718Z
-title: a
+title: teste
 link: http://localhost:8000/
-image: /assets/ativo-6.png
+image: /assets/torus-7-.jpg
 tags:
   - Destaque
 ---
