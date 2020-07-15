@@ -1,8 +1,8 @@
 ---
 date: 2020-07-10T14:00:53.468Z
-title: pagina numero um
+title: buscar
 link: http://localhost:8000/
-image: /assets/ativo-8.png
+image: /assets/torus-2-.jpg
 tags:
   - Materiais
 ---
