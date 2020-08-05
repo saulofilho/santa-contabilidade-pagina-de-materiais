@@ -5,8 +5,8 @@ import Layout from "../components/Layout"
 import Materiais from "../components/Materiais"
 import TypeChecker from 'typeco';
 import loadable from '@loadable/component'
+import './index.css'
 import '../components/Search.css'
-import '../components/index.css'
 
 const SearchField = loadable(() => import('react-search-field'))
 
@@ -22,7 +22,7 @@ const IndexPage = ({
     ...post.node,
   }))
 
-  const postDestaque = posts.filter(post => post.tags == "Destaque")
+  const postsDestaques = posts.filter(post => post.tags == "Destaque")
   const postMateriais = posts.filter(post => post.tags == "Materiais")
 
   const [onSearchClickExampleList, setOnSearchClickExampleList] = useState([...postMateriais]);
@@ -67,7 +67,7 @@ const IndexPage = ({
           <div className="lancamentos-wrapper">
             <h2 className="container">Últimos lançamentos</h2>
             <div className="ultimos-lancamentos container">
-                {postDestaque.map((post, index) => (
+                {postsDestaques.map((post, index) => (
                   <Materiais key={post + index} post={post} />
                 ))}
               </div>

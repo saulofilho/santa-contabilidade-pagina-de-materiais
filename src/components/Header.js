@@ -10,64 +10,62 @@ const Header = () => {
 
   return (
     <header
-      className={menuClassNames}
+      className="header-pag"
     >
-      <div className="header-left">
-        <div className="logo-header">
-          <a href="/">
-            <img src={LogoHero} alt="" />
+      <div className={menuClassNames}>
+        <div className="header-left">
+          <div className="logo-header">
+            <a href="/">
+              <img src={LogoHero} alt="" />
+            </a>
+          </div>
+        </div>
+        <div className="header-right-desk">
+          <a href="#search">
+            <img src={Lupa} alt="lupa anchor search" />
           </a>
-        </div>
-      </div>
-      <div className="header-right-desk">
-        <a href="#search">
-          <img src={Lupa} alt="lupa anchor search" />
-        </a>
-        <div className="btns-wrapper">
-          <button className="btn-materiais">
-            <a href="http://localhost:8000/">
+          <div className="btns-wrapper">
+            <a href="http://localhost:8000/" className="btn-materiais">
               Blog
-              </a>
-          </button>
-          <button className="btn-fale">
-            <a href="http://localhost:8000/">
-              Fale com um especialista
-              </a>
-          </button>
+            </a>
+            <button className="btn-fale">
+              <a href="http://localhost:8000/">
+                Fale com um especialista
+                </a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="header-right-mob">
-        <a href="#search">
-          <img src={Lupa} alt="lupa anchor search" />
-        </a>
-        <div className="btns-wrapper">
-          <button className="btn-materiais">
-            <a href="http://localhost:8000/">
+        <div className="header-right-mob">
+          <a href="#search">
+            <img src={Lupa} alt="lupa anchor search" />
+          </a>
+          <div className="btns-wrapper">
+            <a href="http://localhost:8000/" className="btn-materiais">
               Blog
-              </a>
-          </button>
-          <button className="btn-fale">
-            <a href="http://localhost:8000/">
-              Fale com um especialista
-              </a>
-          </button>
+            </a>
+            <button className="btn-fale">
+              <a href="http://localhost:8000/">
+                Fale com um especialista
+                </a>
+            </button>
+          </div>
         </div>
+        <button
+          className="button-blank menu-button"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ?
+            <X
+              color={"#06606B"}
+              className="x"
+            />
+              :
+            <Menu
+              color={"#06606B"}
+              className="menu"
+            />}
+        </button>
       </div>
-      <button
-        className="button-blank menu-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ?
-          <X
-            color={"#06606B"}
-            className="x"
-          />
-            :
-          <Menu
-            color={"#06606B"}
-            className="menu"
-          />}
-      </button>
     </header>
   )
 }
