@@ -7,12 +7,12 @@ const Hero = () => {
     <section className="hero container">
       <div className="text-hero">
         <h1>
-          Materiais Educativos
+          Materiais educativos
         </h1>
         <p>
-          Acesse gratuitamente eBooks, Webinars, Templates e outros materiais
-          educativos para ampliar seus conhecimentos em tecnologia,
-          empreendedorismo, marketing digital e outros.
+        Acesse gratuitamente e-books, webinars, vídeos, planilhas, mapas mentais
+        e outros materiais para ampliar seus conhecimentos em gestão,
+        empreendedorismo e potencializar O SEU SUCESSO!
         </p>
       </div>
       <div className="img-hero">

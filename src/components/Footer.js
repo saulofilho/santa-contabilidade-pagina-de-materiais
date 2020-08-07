@@ -3,7 +3,7 @@ import './Footer.css'
 import LogoFooter from '../../static/assets/logo-branco.png'
 import Face from '../../static/assets/btn-face.png'
 import Insta from '../../static/assets/btn-insta.png'
-import Linkedin from '../../static/assets/btn-linke.png'
+import WhatsApp from '../../static/assets/whatsapp-wht.png'
 
 const Footer = () => {
   return (
@@ -14,9 +14,11 @@ const Footer = () => {
             SOBRE NÓS
           </h4>
           <p>
-            Somos a Santa Contabilidade, empresa especialista em contabilidade
-            digital. Nosso foco é ajudar e estruturar o mercado a migrar sua
-            contabilidade para o meio digital, dando agilizade e redução de custos.
+            Nós somos a Santa Contabilidade, uma empresa especialista em
+            contabilidade digital. Estamos no mercado há mais de 10 anos, em
+            constante atualização e qualificação. Nosso maior compromisso é com
+            o sucesso do seu negócio. E nosso foco está em trazer a sua
+            contabilidade para o mundo digital, com agilidade e redução de custos
           </p>
         </div>
         <div className="para-empresas">
@@ -31,25 +33,43 @@ const Footer = () => {
           <br/>
           <p>
             <a href="https://santacontabilidade.com.br/">
-              Contabilidade digital
+            Trocar de contador
             </a>
           </p>
           <br/>
           <p>
             <a href="https://santacontabilidade.com.br/">
-              Planejamento Orçamentário
+            Abrir uma empresa
             </a>
           </p>
           <br/>
           <p>
             <a href="https://santacontabilidade.com.br/">
-              Emisssão de NF-e
+            Fale com um especialista
             </a>
           </p>
           <br/>
           <p>
             <a href="https://santacontabilidade.com.br/">
-              Controle de estoque
+            Escolha seu plano
+            </a>
+          </p>
+          <br/>
+          <p>
+            <a href="https://santacontabilidade.com.br/">
+            Contabilidade digital
+            </a>
+          </p>
+          <br/>
+          <p>
+            <a href="https://santacontabilidade.com.br/">
+            Área do cliente
+            </a>
+          </p>
+          <br/>
+          <p>
+            <a href="https://santacontabilidade.com.br/">
+            Blog
             </a>
           </p>
         </div>
@@ -58,15 +78,20 @@ const Footer = () => {
             ENTRE EM CONTATO :)
           </h4>
           <p>
-            UNIDADE FLORIANÓPOLIS
+            Unidade Florianópolis
             <br/>
             <br/>
             Rua Adelino Boschetti Mateus, 99 - São José - SC
             <br/>
             <br/>
-            Telefone: 3257 0123
+            Telefones:
             <br/>
-            Email: fran@fran.com
+            (48)3259-2880
+            <br/>
+            (48)99647-0220
+            <br/>
+            <br/>
+            francisco@santacontabilidade.com.br
           </p>
         </div>
         <div className="redes-sociais">
@@ -74,23 +99,23 @@ const Footer = () => {
             SIGA-NOS NAS REDES SOCIAIS
           </h4>
           <p>
-            Fique por dentro de tudo o que acontece no mundo da contabilidade
-            e ganhe tal tal
+          Fique por dentro de tudo o que acontece no mundo do
+          empreendedorismo e da contabilidade!
           </p>
           <div className="btns-sociais-wrapper">
-            <button>
-              <a href="https://www.instagram.com/santacontabil/?igshid=rqlxs7ahcjql">
-                <img src={Insta} alt="instagram logo"/>
-              </a>
-            </button>
             <button>
               <a href="https://www.facebook.com/santacontabil/">
                 <img src={Face} alt="facebook logo"/>
               </a>
             </button>
             <button>
-              <a href="https://linktr.ee/santacontabil">
-                <img src={Linkedin} alt="linkedin logo"/>
+              <a href="https://www.instagram.com/santacontabil/?igshid=rqlxs7ahcjql">
+                <img src={Insta} alt="instagram logo"/>
+              </a>
+            </button>
+            <button>
+              <a href="https://api.whatsapp.com/send?phone=554884289990&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especilista.">
+                <img src={WhatsApp} alt="whatsapp logo"/>
               </a>
             </button>
           </div>

@@ -53,19 +53,19 @@ const IndexPage = ({
         <section className="search container" id="search">
           <div className="search-text-wrapper">
             <p>
-              Guias completos e gratuitos sobre
-              <br/>
-              os principais temas de empreendedorismo
+            Guias completos e gratuitos sobre
+            <br/>
+            os temas mais importantes do empreendedorismo
             </p>
           </div>
           <SearchField
-            placeholder="O que você quer aprender hoje?"
+            placeholder="O que VOCÊ QUER aprender hoje?"
             onSearchClick={onSearchClickExample}
           />
         </section>
         <main className="materiais-wrapper">
           <div className="lancamentos-wrapper">
-            <h2 className="container">Últimos lançamentos</h2>
+            <h2 className="container">Principais lançamentos</h2>
             <div className="ultimos-lancamentos container">
                 {postsDestaques.map((post, index) => (
                   <Materiais key={post + index} post={post} />
