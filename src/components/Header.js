@@ -8,6 +8,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper container';
 
+  const scrollToSearch = () => {
+    document.querySelector('#search').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <header
       className="header-pag"
@@ -21,11 +25,16 @@ const Header = () => {
           </div>
         </div>
         <div className="header-right-desk">
-          <a href="#search">
+          <a
+            href="#search"
+            onClick={() => {
+              scrollToSearch()
+            }}
+          >
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-            <a href="http://localhost:8000/" className="btn-materiais">
+            <a href="https://santacontabilidade-site-blog.netlify.app/blog" className="btn-materiais">
               Blog
             </a>
             <button className="btn-fale">
@@ -40,7 +49,7 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-            <a href="http://localhost:8000/" className="btn-materiais">
+            <a href="https://santacontabilidade-site-blog.netlify.app/blog" className="btn-materiais">
               Blog
             </a>
             <button className="btn-fale">

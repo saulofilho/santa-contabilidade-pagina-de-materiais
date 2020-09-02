@@ -22,7 +22,7 @@ module.exports = {
         name: `Santa Contabilidade. Página de Materiais.`,
         short_name: `santacontabilidade-pagina-de-materiais`,
         start_url: `/`,
-        background_color: `rgb(127, 246, 27`,
+        background_color: `rgb(127, 246, 27)`,
         theme_color: `#06606B`,
         display: `minimal-ui`,
         icon: `static/assets/logo-vertical.png`,
