@@ -1,5 +1,5 @@
 .header-pag {
-  background: #fff;
+  background: transparent;
   height: auto;
   width: 100%;
   padding-top: 30px;
@@ -28,6 +28,9 @@
 }
 .header-right-desk a:hover {
   opacity: 0.6;
+}
+.header-right-desk a {
+  height: 18px;
 }
 .logo-header {
   width: 100%;

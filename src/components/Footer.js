@@ -81,14 +81,16 @@ const Footer = () => {
             Unidade Florianópolis
             <br/>
             <br/>
-            Rua Adelino Boschetti Mateus, 99 - São José - SC
+            Rua Adelino Boschetti Mateus, 99
+            <br/>
+            São José - SC
             <br/>
             <br/>
             Telefones:
             <br/>
-            (48)3259-2880
+            (48) 3259-2880
             <br/>
-            (48)99647-0220
+            (48) 99647-0220
             <br/>
             <br/>
             francisco@santacontabilidade.com.br
