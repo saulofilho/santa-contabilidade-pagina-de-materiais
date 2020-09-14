@@ -38,31 +38,31 @@ const Footer = () => {
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/abrir-empresa">
             Abrir uma empresa
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/especialista">
             Fale com um especialista
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/#planos">
             Escolha seu plano
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/#contabilidade-digital">
             Contabilidade digital
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/area-do-cliente">
             Área do cliente
             </a>
           </p>

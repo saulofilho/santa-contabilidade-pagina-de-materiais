@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Santa Contabilidade | Página de Materiais.`,
+    title: `Santa Contabilidade - Página de Materiais.`,
     description: `Página de Materiais`,
-    siteUrl: `https://pagina-de-materiais.netlify.app/`,
+    siteUrl: `https://santacontabilidade-pagina-de-materiais.netlify.app/`,
     home: {
       title: `Santa Contabilidade`,
       description: `Página de Materiais.`,
@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Santa Contabilidade. Página de Materiais.`,
+        name: `Santa Contabilidade - Página de Materiais.`,
         short_name: `santacontabilidade-pagina-de-materiais`,
         start_url: `/`,
         background_color: `rgb(127, 246, 27)`,
