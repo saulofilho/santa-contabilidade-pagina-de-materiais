@@ -13,6 +13,8 @@ collections:
     folder: data
     slug: '{{slug}}'
     create: true
+    editor:
+      preview: false
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Titulo, widget: string }
