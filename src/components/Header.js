@@ -43,11 +43,11 @@ const Header = () => {
               <img src={Lupa} alt="lupa anchor search" />
             </a>
             <div className="btns-wrapper">
-              <a href="https://santacontabilidade-site-blog.netlify.app/blog" className="btn-materiais">
+              <a href="https://santacontabilidade/blog" className="btn-materiais">
                 Blog
               </a>
               <button className="btn-fale">
-                <a href="http://localhost:8000/">
+                <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                   Fale com um especialista
                   </a>
               </button>
@@ -58,11 +58,11 @@ const Header = () => {
               <img src={Lupa} alt="lupa anchor search" />
             </a>
             <div className="btns-wrapper">
-              <a href="https://santacontabilidade-site-blog.netlify.app/blog" className="btn-materiais">
+              <a href="https://santacontabilidade/blog" className="btn-materiais">
                 Blog
               </a>
               <button className="btn-fale">
-                <a href="http://localhost:8000/">
+                <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                   Fale com um especialista
                   </a>
               </button>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import './Footer.css'
 import LogoFooter from '../../static/assets/logo-branco.png'
 import Face from '../../static/assets/btn-face.png'
@@ -6,6 +7,18 @@ import Insta from '../../static/assets/btn-insta.png'
 import WhatsApp from '../../static/assets/whatsapp-wht.png'
 
 const Footer = () => {
+  const scrollToContador = () => {
+    document.querySelector('#fale-contador').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const scrollToPlanos = () => {
+    document.querySelector('#planos').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const scrollToServicos = () => {
+    document.querySelector('#servicos').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <footer>
       <div className="infos-footer container">
@@ -32,45 +45,54 @@ const Footer = () => {
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a
+              href="https://santacontabilidade.com.br/#fale-contador"
+              onClick={() => {
+                scrollToContador()
+              }}
+            >
             Trocar de contador
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/abrir-empresa">
+            <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
             Abrir uma empresa
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/especialista">
+            <a href="https://contabilidade.santacontabilidade.com.br/especialista">
             Fale com um especialista
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/#planos">
+            <a
+              href="https://santacontabilidade.com.br/#planos"
+              onClick={() => {
+                scrollToPlanos()
+              }}
+            >
             Escolha seu plano
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/#contabilidade-digital">
+            <a
+              href="https://santacontabilidade.com.br/#servicos"
+              onClick={() => {
+                scrollToServicos()
+              }}
+            >
             Contabilidade digital
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/area-do-cliente">
-            Área do cliente
-            </a>
-          </p>
-          <br/>
-          <p>
-            <a href="https://santacontabilidade.com.br/">
-            Blog
-            </a>
+            <Link to={"/blog"}>
+              Blog
+            </Link>
           </p>
         </div>
         <div className="entre-em-contato">
@@ -78,10 +100,13 @@ const Footer = () => {
             ENTRE EM CONTATO :)
           </h4>
           <p>
-            Unidade Florianópolis
+          Unidade Florianópolis
             <br/>
             <br/>
-            Rua Adelino Boschetti Mateus, 99
+            Rua Adelino Boschetti Mateus,
+            <br/>
+            99
+            <br/>
             <br/>
             São José - SC
             <br/>
@@ -90,7 +115,7 @@ const Footer = () => {
             <br/>
             (48) 3259-2880
             <br/>
-            (48) 99647-0220
+            (48 )99647-0220
             <br/>
             <br/>
             francisco@santacontabilidade.com.br
