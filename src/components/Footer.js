@@ -46,10 +46,7 @@ const Footer = () => {
           <br/>
           <p>
             <a
-              href="https://santacontabilidade.com.br/#fale-contador"
-              onClick={() => {
-                scrollToContador()
-              }}
+              href="https://contabilidade.santacontabilidade.com.br/trocar-de-contador"
             >
             Trocar de contador
             </a>
@@ -100,22 +97,21 @@ const Footer = () => {
             ENTRE EM CONTATO :)
           </h4>
           <p>
-          Unidade Florianópolis
+            Unidade Florianópolis
             <br/>
             <br/>
-            Rua Adelino Boschetti Mateus,
+            Rua Adelino Boschetti Mateus, 49
             <br/>
-            99
+            Picadas do Sul, São José – SC
             <br/>
-            <br/>
-            São José - SC
+            CEP: 88.106-120
             <br/>
             <br/>
             Telefones:
             <br/>
             (48) 3259-2880
             <br/>
-            (48 )99647-0220
+            (48) 99647-0220
             <br/>
             <br/>
             francisco@santacontabilidade.com.br
