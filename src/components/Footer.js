@@ -31,7 +31,7 @@ const Footer = () => {
             contabilidade digital. Estamos no mercado há mais de 10 anos, em
             constante atualização e qualificação. Nosso maior compromisso é com
             o sucesso do seu negócio. E nosso foco está em trazer a sua
-            contabilidade para o mundo digital, com agilidade e redução de custos
+            contabilidade para o mundo digital, com agilidade e redução de custos.
           </p>
         </div>
         <div className="para-empresas">
